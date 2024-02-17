@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M-Ticket</title>
+  <!-- daisy ui & tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- manrope font-family from google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- custom styles -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <!-- navbar section starts here -->
+    <nav class="container mx-auto lg:px-24 px-8">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl lg:text-4xl gap-0 font-extrabold">M-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+
+          <a class="btn btn-outline btn-success lg:mx-3 px-8 text-white">Bus <img class="hidden lg:inline"
+              src="images/bus-icon.png" alt=""></a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar section ends here -->
+
+    <!-- Banner section starts here -->
+    <div class="container mx-auto lg:px-24 px-8 my-8 lg:my-24">
+      <div class="relative ">
+        <img class="w-full object-cover" src="./Images/banner.png" alt="">
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center  flex flex-col justify-center items-center px-0 space-y-0 lg:space-y-6 md:px-0">
+          <h3 class="text-xl lg:text-4xl font-extrabold text-white">End-to-End Travel With</h3>
+          <h3 class="text-xl lg:text-4xl font-extrabold text-green-500">M Paribahan</h3>
+          <p class="text-white font-medium mb-6">The teenager program is the previous step to reach the professional
+            level</p>
+          <button class="btn btn-success px-5 text-white">Buy Ticket</button>
+        </div>
+      </div>
+    </div>
+    <!-- Banner section ends here -->
+  </header>
+  <main>
+    <!-- best offers for you section starts here -->
+    <div class="container mx-auto lg:px-24 px-8 my-8 lg:my-24">
+      <h1 class="text-3xl text-center font-bold mb-10">Best offer for you</h1>
+      <div class="flex  gap-6">
+        <div class="flex flex-1 gap-36 bg-orange-400 p-10 rounded-3xl my-4 ">
+          <div class="space-y-2">
+            <h1 class="text-4xl font-extrabold">15% OFF</h1>
+            <h4 class="text-xl font-medium">On Your Purchase</h4>
+            <p class="opacity-70">use by january 2024</p>
+          </div>
+          <div class="flex flex-col justify-center gap-2 items-center">
+            <h2 class="text-3xl font-bold">NEW<span class="text-2xl">15</span></h2>
+            <p class="opacity-70">Coupon Code</p>
+          </div>
+        </div>
+        <div class="flex flex-1 gap-36 bg-pink-400 p-10 rounded-3xl my-4 ">
+          <div class="space-y-2">
+            <h1 class="text-4xl font-extrabold">20% OFF</h1>
+            <h4 class="text-xl font-medium">On Your Purchase</h4>
+            <p class="opacity-70">use by january 2024</p>
+          </div>
+          <div class="flex flex-col justify-center gap-2 items-center">
+            <h2 class="text-3xl font-bold">Couple <span class="text-2xl">20</span></h2>
+            <p class="opacity-70">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <button class="btn btn-outline btn-success font-bold text-lg">See All Offer</button>
+      </div>
+    </div>
+    <!--  best offers for you section ends here -->
+
+    <!-- M.H Paribahan starts here -->
+    <div class="container mx-auto lg:px-24 px-8 my-8 lg:my-24 border-t-2 border-green-500 rounded-t-3xl bg-slate-100">
+      <div>
+        <div class="flex flex-col items-center justify-center ">
+          <h1 class="text-4xl font-bold mt-24 mb-6">M.H. Paribahan</h1>
+          <p class="opacity-85 w-2/3 text-center mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            eum sint soluta
+            facilis accusantium reprehenderit corporis earum illo distinctio explicabo!</p>
+
+        </div>
+        <!-- greeline paribahan starts here -->
+        <div class="bg-white rounded-3xl flex gap-14">
+          <div class="flex flex-col p-10">
+            <!-- first part -->
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <!-- logo -->
+                <div>
+                  <img src="images/bus-logo.png" alt="bus-logo">
+                </div>
+                <div>
+                  <h1 class="text-3xl font-bold">Greenline Paribahan</h1>
+                  <p>Coach-009-WEB ! AC_Business</p>
+                </div>
+              </div>
+              <div>
+                <!-- seats left -->
+                <div class="flex gap-1 bg-lime-100 rounded-lg p-3">
+                  <img src="images/seat-green.png" alt="">
+                  <p>40 Seats Left</p>
+                </div>
+              </div>
+            </div>
+            <!-- route -->
+            <div class="bg-slate-100  rounded-2xl m-3 space-y-4 p-6">
+              <div class="flex justify-between">
+                <p class="text-lg">Route</p>
+                <p class="text-lg">Dhaka - Sylhet</p>
+              </div>
+              <div class="flex justify-between border-dotted border-y-2 py-3">
+                <p class="text-lg">Departure Time</p>
+                <p class="text-lg">9:00 PM</p>
+              </div>
+              <div class="flex justify-between gap-3">
+                <p class="bg-slate-300 rounded-md p-3">Boarding Point - Laxmipur</p>
+                <p class="bg-slate-300 rounded-md p-3">Dropping Point - Bogura</p>
+                <p class="bg-slate-300 rounded-md p-3">Est. Time - 11 Hour</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 justify-center items-center border-dashed border-s-2 border-green-200 ps-12">
+            <img src="images/fare.png" alt="">
+            <p class="text-3xl font-bold">550 Taka</p>
+            <p class="text-2xl opacity-80">Per Seat</p>
+          </div>
+        </div>
+         <!-- greeline paribahan ends here -->
+
+         <!-- select your seat section starts here -->
+         
+
+         <div  class="bg-white rounded-3xl mt-6 flex">
+          <div class="flex-1">
+            <h1 class="text-xl font-semibold">Select Your Seat</h1>
+            <div class="flex justify-between border-dashed border-y-2 p-2 mb-8">
+              <div class="flex items-center gap-2">
+                <div class="w-4">
+                  <img src="Images/seat-gray.png" alt="">
+                </div>
+                <p class="opacity-70">Available</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-4">
+                  <img src="Images/seat-green.png" alt="">
+                </div>
+                <p class="opacity-70 text-green-900">Selected</p>
+              </div>
+            </div>
+          
+            <div class="flex gap-6 items-center justify-center">
+              <div class="grid grid-cols-3 gap-2">
+                <p class="px-6 py-2 ">A</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg ">A1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">A2</p>
+                <p class="px-6 py-2 ">B</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">B1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">B2</p>
+                <p class="px-6 py-2 ">C</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">C1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">C2</p>
+                <p class="px-6 py-2 ">D</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">D1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">D2</p>
+                <p class="px-6 py-2 ">E</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">E1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">E2</p>
+                <p class="px-6 py-2 ">F</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">F1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">F2</p>
+                <p class="px-6 py-2 ">G</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">G1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">G2</p>
+                <p class="px-6 py-2 ">H</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">H1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">H2</p>
+                <p class="px-6 py-2 ">I</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">I1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">I2</p>
+                <p class="px-6 py-2 ">J</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">J1</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">J2</p>
+          
+          
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">A3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">A4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">B3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">B4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">C3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">C4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">D3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">D4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">E3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">E4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">F3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">F4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">G3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">G4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">H3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">H4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">I3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">I4</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">J3</p>
+                <p class="bg-slate-300 px-6 py-2 rounded-lg">J4</p>
+              </div>
+          
+            </div>
+           </div>
+          
+          <!-- part 2 -->
+           <div class="mb-24 flex-1">
+            <h1 class="text-xl font-semibold border-dashed border-b-2 p-2">Select Your Seat</h1>
+          
+            <div class="bg-slate-100 rounded-xl m-4 p-4">
+              <div class="flex justify-between font-semibold">
+                <p>Seat</p>
+                <p>Class</p>
+                <p>Price</p>
+              </div>
+              <ul class="mb-2">
+
+              </ul>
+              <hr>
+              <div class="flex justify-between mb-4">
+                <p>Total Peice</p>
+                <p>0 TK</p>
+              </div>
+              <div class="flex">
+                <input type="text" class="border-gray-300 border rounded-l-md py-2 px-4" placeholder="Have any coupon">
+                <button class="bg-green-500 hover:bg-blue-700 text-white font-bold rounded-r-md py-2 px-4">Apply</button>
+              </div>
+              <div class="flex justify-between mt-4">
+                <p>Grand Total</p>
+                <p>0 TK</p>
+              </div>
+              
+            </div>
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <!-- Name Input -->
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                  Name
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Enter your name">
+              </div>
+              <!-- Number Input -->
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="number">
+                  Number
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="number" type="text" placeholder="Enter your number">
+              </div>
+              <!-- Email Input -->
+              <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                  Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email">
+              </div>
+              <!-- Submit Button -->
+              <div class="flex items-center justify-between">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          
+           </div>
+           
+         </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
